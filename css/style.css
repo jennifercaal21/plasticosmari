@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center; /* Centra todo el texto base */
+}
+
+/* Encabezado */
+header {
+  background-color: #f393de; /* ya tienes este color */
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+
+/* Navegación */
+nav {
+  background-color: #5bc3ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #4ab1e5;
+}
+
+/* Secciones */
+section {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente contenido dentro de la sección */
+}
+
+#inicio {
+  background-color: #f9f9f9;
+}
+
+#productos {
+  background-color: #e0f7fa;
+}
+
+#contacto {
+  background-color: #c5a678;
+}
+
+/* Contenedor de productos */
+.productos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+/* Cada producto en fila */
+.producto {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  justify-content: center; /* Centra horizontalmente imagen + texto */
+}
+
+/* Imagen del producto */
+.producto img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Información del producto */
+.producto .info {
+  flex: 1;
+  text-align: center;
+}
+
+/* Espaciado en el título */
+.producto .info h3 {
+  margin-bottom: 10px;
+}
+
+/* Formularios centrados */
+form {
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .producto {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .producto img {
+    margin-bottom: 10px;
+  }
+
+  .producto .info {
+    text-align: center;
+  }
+
+  form {
+    text-align: center;
+  }
+}
+
